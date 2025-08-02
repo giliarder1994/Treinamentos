@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --cor00: #00dbdb1e;
+    --cor01: #00DBDB;
+    --cor02: #1DB1B1;
+    --cor03: #2D8686;
+    --cor04: #2E5C5C;
+    --cor05: #2F3838;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Oswald", sans-serif;
+
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor00);
+}
+
+header {
+    min-height: 90px;
+    background-color: var(--cor03);
+    padding-top: 40px;    
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+}
+
+nav {
+    background-color: var(--cor03);
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;       
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: var(--cor04);
+    background-color: var(--cor02);
+    transition-duration: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 768px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+}
+
+
+main h2 {
+    color:var(--cor05);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-align: left;
+    margin: 30px 0px;
+    font-size: 1.5em;
+}
+
+main img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    color: black;
+    margin: 20px 0px;
+    line-height: 1.5em;
+}
+
+main ol {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    line-height: 2em;
+}
+
+main dl {
+    font-weight: bold;
+}
+
+main dt, dl {
+    line-height: 2.5em;
+}
+
+main dd > a {
+    color: red;
+    text-decoration: none;
+}
+
+main dd > a:hover {
+    color: var(--cor04);
+    text-decoration: underline;
+}
+
+mark {
+    background-color: greenyellow;
+}
+
+footer {
+    
+    margin: 10px 0px;
+}
+
+footer p {
+    background-color: var(--cor03);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+span.diferente:hover {
+    text-decoration: underline;
+    color: red;
+
+}
